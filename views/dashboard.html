@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comunico</title>
+    <link rel="icon" href="/img/Isologo-Comunico.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/header.css"/>
+    <link rel="stylesheet" href="/css/dashboard.css"/>
+    <link
+      href="https://db.onlinewebfonts.com/c/14936bb7a4b6575fd2eee80a3ab52cc2?family=Feather+Bold"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0c2f2ab9be.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/img/icon.svg" alt="Logo" class="logo-img" />
+        <h1>omunico</h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a th:href="/inicio">Inicio</a></li>
+          <li><a th:href="/senias">Lengua de Señas</a></li>
+          <li><a th:href="/braille">Braille</a></li>
+          <li><a th:href="/suscripciones">Suscripciones</a></li>
+
+          <li>
+            <a th:href="/comprar" class="points-container">
+              <i class="fa-solid fa-coins"></i>
+              <span>0</span>
+            </a>
+          </li>
+
+          <li>
+            <button id="botonVidas" style="display: contents">
+              <div class="grupo_input" id="vidaYNum">
+                <i class="fa-solid fa-heart" id="vidas"></i>
+                <h4 id="vidasNumero">5</h4>
+              </div>
+            </button>
+          </li>
+          <a th:href="/crear-curso"
+            ><img
+              src="/img/perfil-icon.png"
+              alt="Usuario"
+              class="user-icon"
+          /></a>
+        </ul>
+      </nav>
+
+    </header>
+
+    <section class="inicio">
+      <div class="bienvenida">
+        <h2>¡Bienvenido a Comunico!</h2>
+        <p>
+          La forma divertida, efectiva y gratis de aprender lengua de señas y
+          braille.
+        </p>
+      </div>
+      <div class="modulos">
+        <div class="modulo">
+          <h3>Señas</h3>
+          <p>Aprendé con imágenes y juegos interactivos.</p>
+          <a href="/senias">Empezar</a>
+        </div>
+        <div class="modulo">
+          <h3>Braille</h3>
+          <p>Conocé el alfabeto en braille y ponete a prueba.</p>
+          <a th:href="braille">Empezar</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contenido">
+      <div class="ilustracion">
+        <img
+          src="https://design.duolingo.com/4bdb27f6aebbf4f6ae23.svg"
+          alt="Ilustración"
+        />
+      </div>
+
+      <div class="calendario">
+        <h2>Cursos online</h2>
+        <form action="#" method="post">
+          <label for="fecha-clase">Seleccioná una fecha:</label>
+          <input type="date" id="fecha-clase" name="fecha-clase" />
+          <input type="submit" value="Inscribirse" />
+        </form>
+        <div class="eventos">
+          <h3>Cursos disponibles:</h3>
+          <a href="/cursos" class="boton-ver-cursos">
+            Ver cursos disponibles
+            </a>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="chart-container">
+      <div class="chart-info">
+        <h3>Datos estadísticos de discapacidad en Argentina</h3>
+        <p>
+          De un total de 39.671.131 de habitantes, el <span style="font-weight: bold;">12,9%</span> de la población enfrenta alguna dificultad o limitación permanente, lo que representa a <span style="font-weight: bold;">5.114.190</span> personas. 
+        </p>
+        <p>Entre estas, una proporción significativa padece problemas auditivos y/o visuales, condiciones que no solo impactan la comunicación y la interacción social, sino que también pueden limitar el acceso a oportunidades laborales, educativas y recreativas.</p>
+        <p style="font-size: 12px; text-align: end;"> Fuente: <a target="_blank" href="https://www.indec.gob.ar/ftp/cuadros/sociedad/PDLP_10_14.pdf">INDEC</a></p>
+      </div>
+      <div id="chartContainer" style="height: 400px; width: 100%;"></div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h4>Comunico</h4>
+            <p>Aprendé lengua de señas y braille de manera divertida y accesible.</p>
+            <img src="/img/Isologo-Comunico.svg" alt="Logo Comunico" class="footer-logo">
+          </div>
+      
+          <div class="footer-section">
+            <h4>Recursos</h4>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Preguntas Frecuentes</a></li>
+              <li><a href="#">Términos y Condiciones</a></li>
+              <li><a href="#">Política de Privacidad</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section">
+            <h4>Conocé más</h4>
+            <ul>
+              <li><a href="#">Sobre Nosotros</a></li>
+              <li><a href="#">Cursos Disponibles</a></li>
+              <li><a href="#">Testimonios</a></li>
+              <li><a href="#">Carreras</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section">
+            <h4>Redes Sociales</h4>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Comunico - Todos los derechos reservados.</p>
+        </div>
+      </footer>
+      <script src="/js/dashboard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Agregar Curso</title>
+  <link rel="stylesheet" href="/css/crear-curso.css">
+  <link rel="stylesheet" href="/css/header.css"/>
+  <link rel="icon" href="/img/Isologo-Comunico.svg" type="image/x-icon">
+  <link href="https://db.onlinewebfonts.com/c/14936bb7a4b6575fd2eee80a3ab52cc2?family=Feather+Bold" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0c2f2ab9be.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div th:replace="header :: header"></div>
+<div class="container">
+<h1 class="titulo">Crear un nuevo curso</h1>
+<form action="/guardarCurso" method="POST" accept-charset="UTF-8">
+  <label for="nombre">Nombre del Curso:</label>
+  <input type="text" id="nombre" name="nombre" required placeholder="Ej. Curso de Braille"><br>
+
+  <label for="descripcion">Descripción:</label>
+  <textarea id="descripcion" name="descripcion" required placeholder="Descripción del curso"></textarea><br>
+
+  <label for="fecha">Fecha:</label>
+  <input type="date" id="fecha" name="fecha" required><br>
+
+  <label for="hora">Hora:</label>
+  <input type="time" id="hora" name="hora" required><br>
+
+  <label for="tipo">Tipo:</label>
+  <select id="tipo" name="tipo" required>
+    <option value="">Seleccione</option>
+    <option value="senias">Lengua de Señas</option>
+    <option value="braille">Braille</option>
+  </select><br>
+
+  <label for="nivel">Nivel:</label>
+  <select id="nivel" name="nivel" required>
+    <option value="">Seleccione</option>
+    <option value="basico">Básico</option>
+    <option value="intermedio">Intermedio</option>
+    <option value="avanzado">Avanzado</option>
+  </select><br>
+
+  <label for="capacidad">Capacidad:</label>
+  <input type="number" id="capacidad" name="capacidad" required min="1" placeholder="Ej. 30"><br>
+
+  <button type="submit">Crear Curso</button>
+</form>
+</div>
+
+<footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Comunico</h4>
+        <p>Aprendé lengua de señas y braille de manera divertida y accesible.</p>
+        <img src="/img/Isologo-Comunico.svg" alt="Logo Comunico" class="footer-logo">
+      </div>
+  
+      <div class="footer-section">
+        <h4>Recursos</h4>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Preguntas Frecuentes</a></li>
+          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h4>Conocé más</h4>
+        <ul>
+          <li><a href="#">Sobre Nosotros</a></li>
+          <li><a href="#">Cursos Disponibles</a></li>
+          <li><a href="#">Testimonios</a></li>
+          <li><a href="#">Carreras</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h4>Redes Sociales</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Comunico - Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
