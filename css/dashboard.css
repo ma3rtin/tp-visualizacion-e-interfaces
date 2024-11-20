@@ -38,13 +38,15 @@ body {
   display: flex;
   justify-content: center;
   gap: 30px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .modulo {
   background-color: #fff;
   border-radius: 15px;
   padding: 20px;
-  width: 200px;
+  width: 53%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -60,7 +62,7 @@ body {
 }
 
 .modulo a {
-  background-color: #58cc02;
+  background-color: #06b059;
   color: white;
   padding: 10px 20px;
   border-radius: 10px;
@@ -69,37 +71,38 @@ body {
 }
 
 .modulo a:hover {
-  background-color: #46a001;
+  background-color: #03783c;
 }
 
 .contenido {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   padding: 20px 20px 0 20px;
-  gap: 20px;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
 .ilustracion {
   flex: 1;
-  max-width: 25%;
+  max-width: 45%;
   display: flex;
   justify-content: center;
-  margin-left: 25%;
 }
 
 .ilustracion img {
   width: 100%;
   height: auto;
   object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .calendario {
   flex: 1;
   max-width: 25%;
   padding: 20px;
-  margin-right: 25%;
   background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .calendario form {
@@ -118,20 +121,22 @@ body {
   font-size: 1em;
   width: 100%;
   max-width: 250px;
+  margin-bottom: 10px
 }
 
 .calendario input[type="submit"] {
-  background-color: #ff9600;
+  background-color: #4bc5a0;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   font-size: 1em;
   cursor: pointer;
+  width: 94%;
 }
 
 .calendario input[type="submit"]:hover {
-  background-color: #b66e28;
+  background-color: #24785f;
 }
 
 .boton-ver-cursos {
@@ -146,6 +151,7 @@ body {
   font-size: 16px;
   font-family: 'Feather Bold', sans-serif;
   transition: background-color 0.3s ease;
+  width: 94%;
 }
 
 .boton-ver-cursos:hover {
@@ -161,6 +167,7 @@ body {
   max-width: 50%;
   margin: auto;
   padding: 20px 20px 70px 20px;
+  margin-top: 50px
 }
 
 .chart-info, #myChart{
@@ -185,10 +192,14 @@ body {
 }
 
 .chart-info p{
-  margin-top: 10px;
+  margin-top: 16px;
   font-family: 'DIN Next Rounded LT W01 Regular', sans-serif;
+
 }
 
+h3{
+  font-size: 25px;
+}
 footer {
   background-color: #333;
   color: white;
