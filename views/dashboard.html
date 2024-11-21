@@ -27,13 +27,13 @@
 
       <nav>
         <ul>
-          <li><a th:href="/inicio">Inicio</a></li>
-          <li><a th:href="/senias">Lengua de Señas</a></li>
-          <li><a th:href="/braille">Braille</a></li>
-          <li><a th:href="/suscripciones">Suscripciones</a></li>
+          <li><a href="/views/dashboard.html">Inicio</a></li>
+          <li><a href="/views/menu-senias.html">Lengua de Señas</a></li>
+          <li><a href="/views/menu-braille.html">Braille</a></li>
+          <li><a href="/views/suscripciones.html">Suscripciones</a></li>
 
           <li>
-            <a th:href="/comprar" class="points-container">
+            <a href="/comprar" class="points-container">
               <i class="fa-solid fa-coins"></i>
               <span>0</span>
             </a>
@@ -70,12 +70,12 @@
         <div class="modulo">
           <h3>Señas</h3>
           <p>Aprendé con imágenes y juegos interactivos.</p>
-          <a href="/senias">Empezar</a>
+          <a href="/menu-senias.html">Empezar</a>
         </div>
         <div class="modulo">
           <h3>Braille</h3>
           <p>Conocé el alfabeto en braille y ponete a prueba.</p>
-          <a th:href="braille">Empezar</a>
+          <a href="/views/menu-braille.html">Empezar</a>
         </div>
       </div>
     </section>

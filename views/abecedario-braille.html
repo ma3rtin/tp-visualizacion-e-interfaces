@@ -2,53 +2,60 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Agregar Curso</title>
-  <link rel="stylesheet" href="/css/crear-curso.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abecedario</title>
+  <link rel="icon" href="/img/icon.svg" type="image/x-icon">
   <link rel="stylesheet" href="/css/header.css"/>
-  <link rel="icon" href="/img/Isologo-Comunico.svg" type="image/x-icon">
+  <link rel="stylesheet" href="/css/abecedario.css">
   <link href="https://db.onlinewebfonts.com/c/14936bb7a4b6575fd2eee80a3ab52cc2?family=Feather+Bold" rel="stylesheet">
   <script src="https://kit.fontawesome.com/0c2f2ab9be.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+    <header>
+        <div class="logo">
+          <img src="/img/icon.svg" alt="Logo" class="logo-img" />
+          <h1>omunico</h1>
+        </div>
+  
+        <nav>
+          <ul>
+            <li><a href="/views/dashboard.html">Inicio</a></li>
+            <li><a href="/views/menu-senias.html">Lengua de Señas</a></li>
+            <li><a href="/views/menu-braille.html">Braille</a></li>
+            <li><a href="/views/suscripciones.html">Suscripciones</a></li>
+  
+            <li>
+              <a href="/comprar" class="points-container">
+                <i class="fa-solid fa-coins"></i>
+                <span>0</span>
+              </a>
+            </li>
+  
+            <li>
+              <button id="botonVidas" style="display: contents">
+                <div class="grupo_input" id="vidaYNum">
+                  <i class="fa-solid fa-heart" id="vidas"></i>
+                  <h4 id="vidasNumero">5</h4>
+                </div>
+              </button>
+            </li>
+            <a th:href="/crear-curso"
+              ><img
+                src="/img/perfil-icon.png"
+                alt="Usuario"
+                class="user-icon"
+            /></a>
+          </ul>
+        </nav>
+  
+      </header>
 
 
+<h2 class="titulo"><i class="fa-solid fa-braille"></i>Abecedario</h2>
 
-<div class="container">
-<h1 class="titulo">Crear un nuevo curso</h1>
-<form action="/guardarCurso" method="POST" accept-charset="UTF-8">
-  <label for="nombre">Nombre del Curso:</label>
-  <input type="text" id="nombre" name="nombre" required placeholder="Ej. Curso de Braille"><br>
 
-  <label for="descripcion">Descripción:</label>
-  <textarea id="descripcion" name="descripcion" required placeholder="Descripción del curso"></textarea><br>
-
-  <label for="fecha">Fecha:</label>
-  <input type="date" id="fecha" name="fecha" required><br>
-
-  <label for="hora">Hora:</label>
-  <input type="time" id="hora" name="hora" required><br>
-
-  <label for="tipo">Tipo:</label>
-  <select id="tipo" name="tipo" required>
-    <option value="">Seleccione</option>
-    <option value="senias">Lengua de Señas</option>
-    <option value="braille">Braille</option>
-  </select><br>
-
-  <label for="nivel">Nivel:</label>
-  <select id="nivel" name="nivel" required>
-    <option value="">Seleccione</option>
-    <option value="basico">Básico</option>
-    <option value="intermedio">Intermedio</option>
-    <option value="avanzado">Avanzado</option>
-  </select><br>
-
-  <label for="capacidad">Capacidad:</label>
-  <input type="number" id="capacidad" name="capacidad" required min="1" placeholder="Ej. 30"><br>
-
-  <button type="submit">Crear Curso</button>
-</form>
-</div>
+<div class="braille-grid" id="brailleGrid"></div>
 
 <footer>
     <div class="footer-container">
@@ -92,6 +99,6 @@
       <p>&copy; 2024 Comunico - Todos los derechos reservados.</p>
     </div>
   </footer>
-
+<script src="/js/abecedario.js"></script>
 </body>
 </html>
