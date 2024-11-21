@@ -26,28 +26,6 @@ document.querySelector("form").onsubmit = function (event) {
     });
   };
   
-/*
-document.getElementById("botonVidas").addEventListener("click", function () {
-  let vidasRestantes = document.getElementById("vidasNumero").innerText;
-
-  let tiempoRestante = document.getElementById("tiempoRestante").innerText;
-
-  console.log("Tiempo restante:", tiempoRestante);
-
-  Swal.fire({
-    title: "Vidas Restantes",
-    html: `Te quedan ${vidasRestantes} vidas <i class="fa-solid fa-heart"></i>.<br>Tiempo restante para la próxima vida: <i class="fa-solid fa-clock-rotate-left"></i> ${tiempoRestante} minutos.`,
-    icon: "info",
-    confirmButtonText: "OK",
-    didOpen: () => {
-      const script = document.createElement("script");
-      script.src =
-        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js";
-      document.head.appendChild(script);
-    },
-  });
-});
-*/
 
 document.getElementById("botonCerrar").onclick = function () {
     document.getElementById("modalSalir").style.display = "flex";
