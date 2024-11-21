@@ -21,7 +21,7 @@ document.querySelector("form").onsubmit = function (event) {
       icon: correcta ? "success" : "error",
       title: correcta ? "¡Correcto!" : "¡Incorrecto!",
       text: mensaje,
-      confirmButtonColor: correcta ? "#4CAF50" : "#f44336",
+      confirmButtonColor: correcta ? "#06b059" : "#dc3545",
       confirmButtonText: "Confirmar",
     });
   };
