@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso</title>
+    <link rel="stylesheet" href="/css/curso.css">
+    <link rel="stylesheet" href="/css/header.css"/>
+    <link href="https://db.onlinewebfonts.com/c/14936bb7a4b6575fd2eee80a3ab52cc2?family=Feather+Bold" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0c2f2ab9be.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="/img/icon.svg" alt="Logo" class="logo-img" />
+        <h1>omunico</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a>Inicio</a></li>
+            <li><a>Lengua de Señas</a></li>
+            <li><a>Braille</a></li>
+            <li><a>Suscripciones</a></li>
+
+            <li>
+                <a class="points-container">
+                    <i class="fa-solid fa-coins"></i>
+                    <span>0</span>
+                </a>
+            </li>
+
+            <li>
+                <button id="botonVidas" style="display: contents">
+                    <div class="grupo_input" id="vidaYNum">
+                        <i class="fa-solid fa-heart" id="vidas"></i>
+                        <h4 id="vidasNumero">5</h4>
+                    </div>
+                </button>
+            </li>
+            <a><img
+                    src="/img/perfil-icon.png"
+                    alt="Usuario"
+                    class="user-icon"
+            /></a>
+        </ul>
+    </nav>
+</header>
+
+<h1 class="tituloCurso">¡Curso de conocimiento de bastones para personas ciegas!</h1>
+<h2 class="tituloCurso" id="subtitulo"> Mira los videos a continuación y luego completa las preguntas</h2>
+
+<div class="contenido">
+    <div class="video">
+        <iframe width="1265" height="480" src="https://www.youtube.com/embed/6XOwTb0uNaY" title="EL SIGNIFICADO DE LOS COLORES DE LOS BASTONES PARA PERSONAS CIEGAS #ONCE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="formulario">
+        <form>
+            <p>¿Para qué sirve el bastón blanco explicado en el video?</p>
+
+            <label>
+                <input type="radio" name="baston" value="1"> Para detectar obstáculos
+            </label><br>
+
+            <label>
+                <input type="radio" name="baston" value="2"> Para indicar ceguera
+            </label><br>
+
+            <label>
+                <input type="radio" name="baston" value="3"> Para señalizar la dirección
+            </label><br>
+
+            <label>
+                <input type="radio" name="baston" value="4"> Para fines decorativos
+            </label><br>
+
+            <button type="submit">Enviar respuesta</button>
+        </form>
+    </div>
+</div>
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>Comunico</h4>
+            <p>Aprendé lengua de señas y braille de manera divertida y accesible.</p>
+            <img src="/img/Isologo-Comunico.svg" alt="Logo Comunico" class="footer-logo">
+        </div>
+
+        <div class="footer-section">
+            <h4>Recursos</h4>
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Términos y Condiciones</a></li>
+                <li><a href="#">Política de Privacidad</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Conocé más</h4>
+            <ul>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Cursos Disponibles</a></li>
+                <li><a href="#">Testimonios</a></li>
+                <li><a href="#">Carreras</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Redes Sociales</h4>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Comunico - Todos los derechos reservados.</p>
+    </div>
+</footer>
+</body>
+</html>
