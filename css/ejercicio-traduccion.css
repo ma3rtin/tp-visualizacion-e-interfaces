@@ -111,6 +111,11 @@ body {
     transition: background-color 0.3s ease;
 
 }
+
+.img-senia{
+    max-width: 270px;
+}
+
 .letra {
     margin-bottom: 10px;
     font-size: 1.4em;
