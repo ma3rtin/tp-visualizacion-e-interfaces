@@ -55,47 +55,107 @@ input[type="radio"] {
 
 }
 
+h3{
+display: flex;
+align-items: center;
+ justify-content: center;
+background-color:#1453a3;
+color:white;
+font-size:30px;
+width:100%;
 
-/* Contenedor general para el video y formulario */
+margin-top:20px;
+padding:5px;
+}
+
+.bastones img{
+width:30%;
+height:auto;
+border-radius:25px;
+transition: transform 0.3s ease;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#link{
+background-color:#1453a3;
+color:white;
+border-radius:5px;
+padding:8px;
+}
+#masInfo{
+font-size: 18px;
+    font-weight: bold;
+}
+.bastones{
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+   gap: 20px;
+   width: 100%;
+   transition: transform 0.3s ease;
+}
+.bastones img:hover{
+transition: transform 0.3s ease;
+transform: scale(1.1);
+}
+
 .contenido {
-  display: flex; /* Utilizamos flexbox para poner los elementos en línea */
-  justify-content: space-between; /* Distribuye el espacio entre los elementos */
-  gap: 20px; /* Espacio entre el video y el formulario */
-  margin-top: 50px; /* Espacio superior para alejarlo del título */
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
 }
 
 .video {
-  flex: 1; /* Hace que el video ocupe el 50% del espacio disponible */
+  width: 100%;
+   display: flex;
+   justify-content: center;
 }
 
 .formulario {
-  flex:0.4;
-  width: 25%; /* Hace que el formulario ocupe el otro 50% del espacio */
-  display: flex;
-  justify-content: center; /* Centra el formulario en su espacio */
-  align-items: center; /* Alinea los elementos en el centro */
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  margin-right:10%;
-
-
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+   gap: 20px;
+   width: 100%;
 }
 
+.pregunta {
+ background-color: rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pregunta label {
+  margin-top: 10px;
+}
+.info{
+ background-color: rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.pregunta p{
+background-color:#1cb0f6;
+color:white;
+border-radius:15px;
+padding:10px;
+
+}
 iframe {
-  width: 120%; /* Hace que el iframe ocupe todo el espacio disponible */
-  height: 100%;
-  max-width: 650px; /* Asegura que el video no se haga demasiado grande */
+  width: 120%;
+  max-width: 750px;
   border-radius: 10px;
   margin-left:20px;
 }
 
 form {
-  font-family: Arial, sans-serif;
-  width: 90%; /* Asegura que el formulario no se quede estrecho */
-  max-width: 300px;
-   /* Máximo tamaño del formulario */
+display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 button {
@@ -105,7 +165,10 @@ button {
   border:none;
   border-radius:10px;
   cursor: pointer;
-  width: 100%;
+  width: 30%;
+  grid-column: span 4;
+   margin-top: 10px;
+   margin-bottom:60px;
 }
 
 button:hover {
