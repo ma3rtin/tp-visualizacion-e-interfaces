@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunico</title>
+    <link rel="icon" href="/img/icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/ejercicio-forma-palabra.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link href="https://db.onlinewebfonts.com/c/14936bb7a4b6575fd2eee80a3ab52cc2?family=Feather+Bold" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0c2f2ab9be.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="/img/icon.svg" alt="Logo" class="logo-img" />
+        <h1>omunico</h1>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="/views/dashboard.html">Inicio</a></li>
+            <li><a href="/views/menu-senias.html">Lengua de Señas</a></li>
+            <li><a href="/views/menu-braille.html">Braille</a></li>
+            <li><a href="/views/suscripciones.html">Suscripciones</a></li>
+
+            <li>
+                <a href="/comprar" class="points-container">
+                    <i class="fa-solid fa-coins"></i>
+                    <span>0</span>
+                </a>
+            </li>
+
+            <li>
+                <button id="botonVidas" style="display: contents">
+                    <div class="grupo_input" id="vidaYNum">
+                        <i class="fa-solid fa-heart" id="vidas"></i>
+                        <h4 id="vidasNumero">5</h4>
+                    </div>
+                </button>
+            </li>
+            <a href="/crear-curso"><img src="/img/perfil-icon.png" alt="Usuario" class="user-icon" /></a>
+        </ul>
+    </nav>
+</header>
+
+<button class="cerrar" id="botonCerrar">&#10005;</button>
+
+<div id="modalSalir" class="modal">
+    <div class="modal-content">
+        <h2>¿Estás seguro que querés salir?</h2>
+        <div class="contenedorDeOpciones">
+            <button id="confirmarSalir" class="cancelar">Abandonar</button>
+            <button id="cancelarSalir" class="confirmar">Continuar</button>
+        </div>
+    </div>
+</div>
+
+<h1 class="titulo">Formá palabras</h1>
+
+<div class="game-container">
+    <div class="imagen">
+        <div>
+            <img src="/img/abecedario braille/braille-g.png" alt="Letra en braille">
+            <img src="/img/abecedario braille/braille-a.png" alt="Letra en braille">
+            <img src="/img/abecedario braille/braille-t.png" alt="Letra en braille">
+            <img src="/img/abecedario braille/braille-o.png" alt="Letra en braille">
+        </div>
+    </div>
+
+    <div class="drop-area" id="dropArea">
+        <p>Arrastrá las letras acá</p>
+        <div id="droppedLetters"></div>
+    </div>
+    <div class="contenedor-letras">
+        <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+            <div class="letra" draggable="true" ondragstart="drag(event)">T</div>
+            <div class="letra" draggable="true" ondragstart="drag(event)">A</div>
+            <div class="letra" draggable="true" ondragstart="drag(event)">G</div>
+            <div class="letra" draggable="true" ondragstart="drag(event)">P</div>
+            <div class="letra" draggable="true" ondragstart="drag(event)">S</div>
+            <div class="letra" draggable="true" ondragstart="drag(event)">O</div>
+            <div class="letra" draggable="true" ondragstart="drag(event)">R</div>
+        </div>
+    </div>
+
+    <form action="/resolver/1" method="post">
+        <input type="hidden" name="respuesta" id="listaLetras" value="">
+        <input type="hidden" name="leccion" value="1" />
+        <input type="hidden" name="ejercicioId" value="1">
+        <div class="submit-container">
+            <button type="submit">Verificar</button>
+        </div>
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/js/ejercicio-forma-palabra.js"></script>
+</body>
+
+</html>

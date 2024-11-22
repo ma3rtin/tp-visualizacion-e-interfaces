@@ -1,0 +1,187 @@
+/* Ya tenías la fuente importada y configurada */
+@import url(https://db.onlinewebfonts.com/c/14936bb7a4b6575fd2eee80a3ab52cc2?family=Feather+Bold);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Feather Bold', sans-serif;
+}
+
+body {
+    background-image: url("../img/fondo-lecciones.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+.letra-soltada {
+    font-size: 6px;
+    transform: scale(0.7);
+    z-index: 1;
+}
+
+.cerrar {
+    position: relative;
+    top: 10px;
+    left: 97%;
+    border: none;
+    font-size: 1.7em;
+    color: #333;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0 7px;
+    border-radius: 10px;
+    background-color: #f44336;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-content h2 {
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+
+.cerrar-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #555;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.confirmar {
+    background-color: #06b059;
+    color: white;
+}
+
+.confirmar:hover {
+    background-color: #03783c;
+    cursor: pointer;
+}
+
+.cancelar {
+    background-color: #dc3545;
+    color: white;
+}
+
+.cancelar:hover {
+    background-color: #af1b2a;
+    cursor: pointer;
+}
+
+.titulo {
+    color: #ff9600;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.drop-area {
+    width: 100%;
+    max-width: 600px;
+    height: 150px;
+    font-size: larger;
+    border: 2px dashed #ff9600;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.contenedor-letras {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.letra {
+    width: 70px;
+    height: 70px;
+    font-size: 2em;
+    border: 2px solid #1cb0f6;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    cursor: grab;
+    background-color: #e0eefa;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.submit-container button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #06b059;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submit-container button:hover {
+    background-color: #03783c;
+}
+
+.imagen {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    align-items: center;
+}
+
+.imagen img {
+    width: 100%;
+    max-width: 100px;
+    height: 160px;
+}
+
+.dropped-letter {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #1cb0f6;
+    border-radius: 10px;
+    background-color: #e0eefa;
+    font-size: 2em;
+}
+
+.submit-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
