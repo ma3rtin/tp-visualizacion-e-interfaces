@@ -21,15 +21,13 @@
   <body>
     <header>
       <div class="logo">
-        <img src="/img/icon.svg" alt="Logo" class="logo-img" />
+        <a href="/views/dashboard.html"><img src="/img/icon.svg" alt="Logo" class="logo-img" /></a>
         <h1>omunico</h1>
       </div>
 
       <nav>
         <ul>
           <li><a href="/views/dashboard.html">Inicio</a></li>
-          <li><a href="/views/menu-senias.html">Lengua de Señas</a></li>
-          <li><a href="/views/menu-braille.html">Braille</a></li>
           <li><a href="/views/suscripciones.html">Suscripciones</a></li>
 
           <li>
@@ -47,12 +45,28 @@
               </div>
             </button>
           </li>
-          <a th:href="/crear-curso"
-            ><img
-              src="/img/perfil-icon.png"
-              alt="Usuario"
-              class="user-icon"
-          /></a>
+          <li class="perfil">
+            <div class="user-profile">
+              <img src="../img/perfil-icon.png" alt="Usuario" class="user-icon" id="user-icon">
+              <div class="dropdown-menu" id="dropdown-menu">
+                <a href="#">
+                  <i class="fa-solid fa-user"></i> Mi perfil
+                </a>
+                <a href="#">
+                  <i class="fa-solid fa-users"></i> Mis amigos
+                </a>
+                <a href="#">
+                  <i class="fa-solid fa-gem"></i> Mi suscripción
+                </a>
+                <a href="#">
+                  <i class="fa-solid fa-shopping-cart"></i> Mis compras
+                </a>
+                <a href="/index.html" class="cerrar-sesion">
+                  <i class="fa-solid fa-sign-out-alt"></i> Cerrar sesión
+                </a>
+              </div>
+            </div>
+          </li>
         </ul>
       </nav>
 
@@ -79,22 +93,8 @@
         </div>
       </div>
     </section>
-
     <section class="contenido">
-      <div class="calendario">
-        <h2>Cursos online</h2>
-        <form action="#" method="post">
-          <label for="fecha-clase">Seleccioná una fecha:</label>
-          <input type="date" id="fecha-clase" name="fecha-clase" />
-          <input type="submit" value="Inscribirse" />
-        </form>
-        <div class="eventos">
-          <h3>Cursos disponibles:</h3>
-          <a href="/views/curso.html" class="boton-ver-cursos">
-            Ver cursos disponibles
-            </a>
-        </div>
-      </div>
+
       <div class="ilustracion">
         <img
           src="https://design.duolingo.com/4bdb27f6aebbf4f6ae23.svg"
@@ -102,6 +102,16 @@
         />
       </div>
 
+      <div class="calendario">
+        <div class="eventos">
+          <h3>Curso sobre bastones</h3>
+          <p> Aprendé sobre los distintos tipos de bastones y su funcionalidad para la vida cotidiana</p>
+
+          <a href="/views/curso.html" class="boton-ver-cursos">
+            Ver curso
+          </a>
+        </div>
+      </div>
     </section>
 
     <div class="chart-container">

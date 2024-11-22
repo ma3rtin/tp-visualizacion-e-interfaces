@@ -17,3 +17,17 @@ window.onload = function () {
   });
   chart.render();
 }
+
+      document.addEventListener("DOMContentLoaded", function() {
+        const userIcon = document.getElementById("user-icon");
+        const dropdownMenu = document.getElementById("dropdown-menu");
+
+        userIcon.addEventListener("click", function(event) {
+          dropdownMenu.classList.toggle("show");
+          event.stopPropagation();
+        });
+
+        document.addEventListener("click", function() {
+          dropdownMenu.classList.remove("show");
+        });
+      });
