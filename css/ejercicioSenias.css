@@ -1,0 +1,188 @@
+@import url(https://db.onlinewebfonts.com/c/14936bb7a4b6575fd2eee80a3ab52cc2?family=Feather+Bold);
+@font-face {
+    font-family: "Feather Bold";
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Feather Bold', sans-serif;
+}
+
+body {
+    background-image:url("../img/fondo-lecciones.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+.barra-experiencia{
+color:white;
+background-color:white;
+
+}
+
+.contenedorDeOpciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+
+
+.titulo {
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 0;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #06b059;
+}
+
+.braille-item-sin-hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    margin-top: -15px;
+    margin-right: 8em;
+    margin-left: 8em;
+    width: 25%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    font-size: 2em;
+    color: #333;
+    transition: background-color 0.3s ease;
+
+}
+.letra {
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+.braille {
+    font-size: 5em;
+    margin: 20px 0;
+}
+.contenedorDeOpciones {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    margin-top: 5px;
+}
+
+.radioYLetraJuntos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    background-color: #1cb0f6;
+    border-radius: 10px;
+    padding: 10px;
+    width: auto;
+}
+
+label.optionLetra {
+    margin: 0 10px 0 0;
+    font-size: 1.2em;
+    color: aliceblue;
+}
+
+.option{
+    height:30px;
+    width: 30px;
+    margin: 4px;
+}
+
+input[type="radio"]:checked {
+    transform: scale(1.12);
+}
+
+.contenedor-enviar{
+    display: flex;
+}
+
+.contenedor-enviar{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.enviar {
+    height: 60px;
+    width: 120px;
+    padding: 18px;
+    background-color: #06b059;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 18px 0 18px 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.enviar:hover {
+    background-color: #048a47;
+    transform: scale(1.05);
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.titulo-de-la-leccion .logo-img{
+    position: absolute;
+    left: 1em;
+    top: 5%;
+}
+
+
+
+
+/*----------------------------------Ejercicio-Video------------------------------------*/
+
+.sign-video{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    gap: 15px;
+}
+.OpcionesFrase{
+    background-color: #1cb0f6;
+    border-radius: 10px;
+    display: flex;
+    gap: 12px;
+    padding: 8px 15px;
+    margin: 17px;
+}
+.optionFrase{
+    color: aliceblue;
+    font-size: 35px;
+    margin-right: 7px;
+}
+.optionVideo{
+    margin-left: 7px;
+}
+.enviar-ejercicioVideo{
+    margin-top: 30px;
+}
+.video{
+    height: 350px;
+    width: 350px;
+    border: solid #1cb0f6 5px;
+    border-radius: 10px;
+    margin-top: 2.5%;
+}
+
